@@ -1,0 +1,52 @@
+.ButtonComponent {
+  background: url('/images/chroma.jpg');
+  background-size: 150%, 150%;
+  background-position: center right;
+  width: theme('width.full');
+  color: theme('colors.white');
+  border-radius: theme('borderRadius.full');
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: theme('height.6');
+  padding: theme('padding.6');
+  font-style: normal;
+  display: flex;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.115em;
+  max-width: fit-content;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.ButtonComponent.outline {
+  border: 2px solid black;
+  color: black;
+  background: transparent;
+}
+.ButtonComponent.outline:hover {
+  border: 2px solid white;
+  color: #fff;
+  background: black;
+}
+
+.ButtonComponent:hover {
+  color: black;
+  background-position: top left;
+  background-size: 150%, 150%;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid black;
+}
+
+.ButtonComponent span {
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  align-items: center;
+}
